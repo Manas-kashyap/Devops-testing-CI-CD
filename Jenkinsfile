@@ -13,7 +13,7 @@ pipeline {
                 }
                 stage('Build on Linux') {
                     agent { 
-                        label 'ubuntu-slave'
+                        label 'test'
                     }
                     steps {
                         sh 'sbt clean compile'
