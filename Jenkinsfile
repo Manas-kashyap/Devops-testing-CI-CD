@@ -5,7 +5,7 @@ pipeline {
             parallel {
                 stage('Build on Windows') {
                     agent { 
-                        label 'ubuntu_16.04(GCP)'
+                        label 'debian-slave'
                     }
                     steps {
                         sh 'sbt clean compile'
